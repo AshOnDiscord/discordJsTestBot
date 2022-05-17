@@ -2,7 +2,7 @@ import { MessageEmbed } from "discord.js";
 import { botName, themeColor, prefix } from "../index";
 import { floatRound } from "../util/floatRound";
 
-export function add(args: string[], pingOnReply = false) {
+export default function add(args: string[], pingOnReply = false) {
   let embed = new MessageEmbed()
     .setTitle(`${botName} - Add`)
     .setColor(themeColor);
